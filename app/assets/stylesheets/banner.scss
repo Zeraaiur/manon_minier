@@ -1,0 +1,205 @@
+.banner {
+  color: white;
+  text-align: center;
+  height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  background-position:right;
+}
+.banner-item{
+  height:20vh;
+}
+
+.navbar-menu{
+  padding-top:3%;
+  padding-right:3%;
+  text-align:right;
+  font-family:Verdana, Geneva, sans-serif;
+  font-size: 30px;
+  font-weight: lighter;
+  color: white;
+  li{
+    margin-left:25px;
+    cursor:pointer;
+    &:hover{
+      opacity:1;
+    }
+  }
+}
+
+.banner-center{
+  height:60vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  .small-photo{
+    height:200px;
+    width:200px;
+    background-image:url("http://res.cloudinary.com/dasowf2xq/image/upload/v1534264059/Manon%20Minier/Manon_Minier.jpg");
+    background-size: cover !important;
+    display:none;
+  }
+  h1 {
+    font-size:60px;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+    font-family: Verdana, Geneva, sans-serif;
+    // transition:font-size 0.3s;
+  }
+  h3 {
+    font-size: 40px;
+    font-weight: lighter;
+    color: white;
+    font-family: Verdana, Geneva, sans-serif;
+  }
+}
+
+.banner-content{
+  width:33%;
+}
+
+.col-picture{
+  height:100%;
+  text-align:center
+}
+
+.photo-box{
+  background-image:url("http://res.cloudinary.com/dasowf2xq/image/upload/v1534264059/Manon%20Minier/Manon_Minier.jpg");
+  background-size: cover !important;
+  max-width:500px;
+  width:100%;
+  height:100%;
+  display:inline-block;
+  background-position: center;
+}
+
+.quote-content{
+  font-family: Georgia, serif;
+  font-size:18px;
+  font-style:oblique;
+  text-align:right;
+  padding-bottom:3%;
+  padding-right:3%;
+}
+.auteur{
+  font-style:normal;
+}
+
+.low-opacity{
+  opacity:0.6;
+  -webkit-transition: opacity 2s; /* Safari */
+  transition: opacity 2s;
+}
+
+.accent{
+  color:$red;
+  font-weight:bolder;
+}
+
+
+//==================================================//
+
+// @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+// @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+// @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+// @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+// @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+// @media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+
+@media only screen and (max-width: 1600px) {
+  .banner-center{
+    h1 {
+      font-size:50px;
+    }
+    h3 {
+      font-size: 30px;
+    }
+  }
+}
+@media only screen and (max-width: 1281px) {
+  .col-picture{
+    padding-left:30px;
+    padding-right:30px;
+  }
+  .banner-center{
+    h1 {
+      font-size:40px;
+    }
+    h3 {
+      font-size: 22px;
+    }
+  }
+}
+@media only screen and (max-width:961px) {
+  .col-picture{
+    padding-left:30px;
+    padding-right:30px;
+  }
+  .banner-content{
+    display:none;
+  }
+  .col-centre{
+    display:inline-block;
+    width:100%;
+  }
+  .banner-center{
+    h1 {
+      font-size:50px;
+    }
+    h3 {
+      font-size: 30px;
+    }
+  }
+  .quote-content{
+    font-size:12px;
+    text-align:center;
+  }
+
+  .navbar-menu{
+    text-align:center;
+    font-size: 30px;
+    li{
+      margin-left:15px;
+    }
+  }
+  .small-photo{
+    display:inline-block!important;
+  }
+
+}
+
+@media only screen and (max-width:481px) {
+  .banner {
+    color: white;
+    text-align: center;
+    height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  background-position:right;
+}
+.banner-center{
+  h1 {
+    font-size:40px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+.navbar-menu{
+  display:none;
+}
+.quote-content{
+  display:none;
+}
+.banner-center{
+  height:100vh;
+}
+}
+
+
+
+
+
+
+
+
