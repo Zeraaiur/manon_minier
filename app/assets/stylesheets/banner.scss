@@ -70,6 +70,37 @@
   height:100%;
   display:inline-block;
   background-position: center;
+  position:relative;
+}
+.photo-hover{
+  opacity:0;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color:$dblue;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:8px;
+    -webkit-transition: opacity 1s; /* Safari */
+    transition: opacity 1s;
+    h1{
+      font-size:40px!important;
+    // margin-bottom:0px;
+  }
+  h3{
+    font-size:25px!important;
+    margin-top:0px;
+    margin-bottom:10px!important;
+  }
+  p{
+    font-size:18px;
+  }
+  &:hover{
+    opacity:0.7;
+  }
 }
 
 .quote-content{
@@ -86,8 +117,8 @@
 
 .low-opacity{
   opacity:0.6;
-  -webkit-transition: opacity 2s; /* Safari */
-  transition: opacity 2s;
+  -webkit-transition: opacity 1s; /* Safari */
+  transition: opacity 1s;
 }
 
 .accent{
