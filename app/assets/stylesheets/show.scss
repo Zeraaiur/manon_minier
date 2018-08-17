@@ -1,0 +1,46 @@
+.show-container{
+  background: rgb(53,76,96); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(53,76,96,1) 0%, rgba(83,109,127,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(53,76,96,1) 0%,rgba(83,109,127,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(53,76,96,1) 0%,rgba(83,109,127,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#354c60', endColorstr='#536d7f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+.banner-show {
+  color: white;
+  text-align: center;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  background-position:right;
+  padding-left:5%;
+  padding-right:5%;
+  p{
+    font-size:20px;
+    text-align:justify;
+    line-height:30px;
+    margin-bottom:20px;
+  }
+}
+.column{
+  column-count: 3;
+  column-gap:70px;
+  margin-bottom:100px;
+}
+@media only screen and (max-width:1281px) {
+  .column{
+    column-count: 2;
+    column-gap:50px;
+  }
+}
+
+@media only screen and (max-width:961px) {
+  .column{
+    column-count: 1;
+  }
+  .banner-show p{
+    font-size:20px;
+    text-align:left;
+
+}
+
+}
