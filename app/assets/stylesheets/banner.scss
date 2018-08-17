@@ -5,6 +5,7 @@
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   background-position:right;
+
 }
 .banner-item{
   height:20vh;
@@ -18,6 +19,10 @@
   font-size: 30px;
   font-weight: lighter;
   color: white;
+    a{
+    color:white;
+    text-decoration: none;
+  }
   li{
     margin-left:25px;
     cursor:pointer;

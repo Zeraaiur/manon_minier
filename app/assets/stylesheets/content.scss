@@ -34,7 +34,13 @@
 }
 
 .main-content{
-  background-color:$lblue;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#354c60+0,536d7f+100 */
+background: rgb(53,76,96); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(53,76,96,1) 0%, rgba(83,109,127,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(53,76,96,1) 0%,rgba(83,109,127,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(53,76,96,1) 0%,rgba(83,109,127,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#354c60', endColorstr='#536d7f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
   padding-top:50px;
   padding-left:5%;
   padding-right:5%;
@@ -97,10 +103,32 @@
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .side-content{
+//   padding-left:0px!important;
+//   padding-right:0px!important;
+// }
+
+
+
 @media only screen and (max-width:768px) {
   .col-temoignage {
     min-height:1px;
     margin-bottom:40px;
 
 }
+
 }
