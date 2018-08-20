@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dasowf2xq
+  api_key: '868555917938429'
+  api_secret: YOTGo5zeQ9AyyF0weAGj--X7DJQ
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dasowf2xq
+  api_key: '868555917938429'
+  api_secret: YOTGo5zeQ9AyyF0weAGj--X7DJQ
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dasowf2xq
+  api_key: '868555917938429'
+  api_secret: YOTGo5zeQ9AyyF0weAGj--X7DJQ
+  enhance_image_tag: true
+  static_image_support: false
