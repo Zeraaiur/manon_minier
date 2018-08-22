@@ -5,8 +5,11 @@
   <%= f.text_field :nom, placeholder: 'nom', class: 'nom-courriel' %>
   <%= f.email_field :courriel, placeholder: 'courriel', class: 'nom-courriel' %>
 </div>
-<div class="contenu-email">
-<%= f.text_area :contenu, placeholder: 'contenu' %>
-<%= f.submit 'Envoyé' %>
+<div class="nom-courriel-box">
+
+  <%= f.text_area :contenu, placeholder: 'contenu', class: 'contenu-courriel' %>
+</div>
+<div class="nom-courriel-box">
+  <%= f.submit 'Envoyé', class: "btn btn-send" %>
 </div>
 <% end %>

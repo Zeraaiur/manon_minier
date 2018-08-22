@@ -1,13 +1,13 @@
     <div class="show-container">
 
-      <div class="banner-show container-fluid" style="background-image: linear-gradient(-225deg, rgba(83, 109, 127, 1) 0%, rgba(0,36,61,0.9) 50%), url('https://res.cloudinary.com/dasowf2xq/image/upload/v1534191225/Manon%20Minier/banner.jpg');">
+      <div class="banner-show container-fluid contact-page" style="background-image: linear-gradient(-225deg, rgba(83, 109, 127, 1) 0%, rgba(0,36,61,0.9) 50%), url('https://res.cloudinary.com/dasowf2xq/image/upload/v1534191225/Manon%20Minier/banner.jpg');">
         <div class="row">
-          <div class="navbar-menu col-xs-12 banner-item">
+          <div class="navbar-menu col-xs-12 banner-item hidden-xs">
             <ul class="list-inline">
               <li class="low-opacity">
 
                 <%= link_to "accueil", root_path %></li>
-                <li class="accent">contact</li>
+                <li class="low-opacity"><%= link_to "contact", new_message_path, :class => "accent" %></li>
               </ul>
             </div>
           </div>
@@ -15,7 +15,9 @@
           <h1><span class="accent">/ </span>MANON MINIER</h1>
           <h2>Coach diction-voix-expression</h2>
           <h3>Artiste multidisciplinaire</h3>
+          <br>
           <hr>
+          <br>
           <div class="column">
             <p>
               Comédienne, diplômée du Conservatoire d’art dramatique
@@ -34,7 +36,7 @@
               pour un Dora Awards, Centre National des Arts à Ottawa, etc.).
             </p>
             <p>
-              horiste dans le spectacle Elvis
+              Choriste dans le spectacle Elvis
               Story au Capitole de Québec, Casino de Hull, Paris, Chine et Japon. Chanteuse soliste dans
               plusieurs événements corporatifs ou spectacles d’envergure dont Show et Froid. En 2013-14 et
               2015, M. Alain Goldberg me confiait la mise en scène et direction artistique du spectacle multi-
@@ -58,4 +60,12 @@
             </p>
           </div>
         </div></div>
+
+        <div class="footer-contact">
+
+          <%= render :partial => 'website/footer_contact' %>
+
+        </div>
+
+
         <%= render "footer" %>

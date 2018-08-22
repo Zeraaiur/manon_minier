@@ -19,8 +19,8 @@
 
 .side-content{
   color:white;
-  padding-left:10%;
-  padding-right:10%;
+  padding-left:6%;
+  padding-right:6%;
   padding-bottom:30px;
 
   li{
@@ -41,39 +41,39 @@ background: -webkit-linear-gradient(-45deg, rgba(53,76,96,1) 0%,rgba(83,109,127,
 background: linear-gradient(135deg, rgba(53,76,96,1) 0%,rgba(83,109,127,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#354c60', endColorstr='#536d7f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
-  padding-top:50px;
-  padding-left:5%;
-  padding-right:5%;
-  h1{
-    font-family:Verdana, Geneva, sans-serif;
-    font-size:2em;
-    margin-top:0px;
-    color:white;
-    margin-bottom:20px;
-  }
-  h3{
-    font-family:Verdana, Geneva, sans-serif;
-    font-size:1.5em;
-    margin-top:0px;
-    color:white;
-    margin-bottom:20px;
-    font-weight:bold;
-  }
-  p{
-    font-family:Verdana, Geneva, sans-serif;
-    color:white;
-    font-size:1em;
-    margin-bottom:30px;
+padding-top:50px;
+padding-left:5%;
+padding-right:5%;
+h1{
+  font-family:Verdana, Geneva, sans-serif;
+  font-size:2em;
+  margin-top:0px;
+  color:white;
+  margin-bottom:20px;
+}
+h3{
+  font-family:Verdana, Geneva, sans-serif;
+  font-size:1.5em;
+  margin-top:0px;
+  color:white;
+  margin-bottom:20px;
+  font-weight:bold;
+}
+p{
+  font-family:Verdana, Geneva, sans-serif;
+  color:white;
+  font-size:1em;
+  margin-bottom:30px;
 
-  }
-  li{
-    list-style:none;
-    font-family:Verdana, Geneva, sans-serif;
-    color:white;
-    font-size:1em;
-    margin-bottom:10px;
+}
+li{
+  list-style:none;
+  font-family:Verdana, Geneva, sans-serif;
+  color:white;
+  font-size:1em;
+  margin-bottom:10px;
 
-  }
+}
 }
 .container-content{
   border-top:10px solid $dblue;
@@ -105,19 +105,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#354c60', end
 }
 
 
+@media only screen and (max-width:641px) {
+  .main-content{
 
-// .side-content{
-//   padding-left:0px!important;
-//   padding-right:0px!important;
-// }
+    padding-top:50px;
+    padding-left:3%;
+    padding-right:3%;
+    h1{
+      font-size:20px!important;
+    }
+    .quote{
+      font-size:16px!important;
+    }
+    h3{
+      font-family:Verdana, Geneva, sans-serif;
+      font-size:18px;
 
+    }
+    .col-temoignage{
+      min-height:auto;
 
-
-@media only screen and (max-width:768px) {
-  .col-temoignage {
-    min-height:1px;
-    margin-bottom:40px;
-
-}
-
+    }
+  }
 }

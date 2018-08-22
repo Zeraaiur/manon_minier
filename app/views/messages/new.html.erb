@@ -1,26 +1,37 @@
- <div class="banner-show container-fluid" style="background-image: linear-gradient(-225deg, rgba(83, 109, 127, 1) 0%, rgba(0,36,61,0.9) 50%), url('https://res.cloudinary.com/dasowf2xq/image/upload/v1534191225/Manon%20Minier/banner.jpg');">
+ <div class="banner-show container-fluid contact-page" style="background-image: linear-gradient(-225deg, rgba(83, 109, 127, 1) 0%, rgba(0,36,61,0.9) 50%), url('https://res.cloudinary.com/dasowf2xq/image/upload/v1534191225/Manon%20Minier/banner.jpg');">
   <div class="row">
-    <div class="navbar-menu col-xs-12 banner-item">
+    <div class="navbar-menu col-xs-12 banner-item hidden-xs">
       <ul class="list-inline">
         <li class="low-opacity">
 
           <%= link_to "accueil", root_path %></li>
-          <li class="accent">contact</li>
-        </ul>
+          <li class="low-opacity">
+
+            <%= link_to "profil", profil_path %></li>
+          </ul>
+        </div>
+      </div>
+
+      <h1><span class="accent">/ </span>MANON MINIER</h1>
+      <h2>Coach diction-voix-expression</h2>
+      <h3>Artiste multidisciplinaire</h3>
+      <br>
+      <hr>
+      <br>
+      <div class="email-form-box">
+
+        <%= render :partial => 'website/email_form' %>
+
+
       </div>
     </div>
 
-    <h1><span class="accent">/ </span>MANON MINIER</h1>
-    <h2>Coach diction-voix-expression</h2>
-    <h3>Artiste multidisciplinaire</h3>
-    <hr>
-    <div class="email-form-box">
 
+    <div class="footer-contact">
 
-      <%= render :partial => 'website/email_form' %>
-
+      <%= render :partial => 'website/footer_contact' %>
 
     </div>
-  </div>
 
-  <%= render :partial => 'website/footer' %>
+
+    <%= render :partial => 'website/footer' %>
