@@ -1,6 +1,8 @@
 class WebsiteController < ApplicationController
-  def index
+  def landing
   end
-  def show
+
+  def profil
   end
+
 end

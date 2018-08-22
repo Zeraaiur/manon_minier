@@ -1,31 +1,25 @@
 .banner {
   color: white;
   text-align: center;
-  height: auto;
-  /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   background-position:right;
 
 }
-.banner-item{
-  height:20vh;
-}
 
 .navbar-menu{
+  height:20vh;
   padding-top:3%;
   padding-right:3%;
   text-align:right;
   font-family:Verdana, Geneva, sans-serif;
   font-size: 30px;
   font-weight: lighter;
-  color: white;
   a{
     color:white;
     text-decoration: none;
   }
   li{
     margin-left:25px;
-    cursor:pointer;
     &:hover{
       opacity:1;
     }
@@ -45,26 +39,30 @@
     display:inline-block;
   }
   h1 {
-    font-size:60px;
+    font-size:55px;
     text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
     font-family: Verdana, Geneva, sans-serif;
     // transition:font-size 0.3s;
   }
   h3 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: lighter;
     color: white;
     font-family: Verdana, Geneva, sans-serif;
   }
 }
 
-.banner-content{
-  width:33%;
+.col-empty{
+  width:31%;
 }
 
 .col-picture{
   height:100%;
-  text-align:center
+  text-align:center;
+  width:31%;
+}
+.col-centre{
+  width: 38%;
 }
 
 .photo-box{
@@ -145,38 +143,53 @@
 
 @media only screen and (max-width:641px) {
   .banner {
-    height:100vh!important;
+    height:auto!important;
     padding:5%;
     text-align:center;
     display:flex;
     align-items:center;
     justify-content:center;
   }
+
   .banner-item{
     height:auto!important;
+  }
+  .banner-center{
+    height:100%!important;
   }
   .banner-content{
     width:auto!important;
     margin-bottom:20px;
     h1{
-      font-size:40px;
+      font-size:30px;
     }
     h3{
-      font-size:22px;
+      font-size:18px;
     }
 
   }
+  .small-photo{
+    height:200px!important;
+    width:200px!important;
+  }
   .quote-content{
-    font-size:20px;
+    margin-top:20px;
+    font-size:16px;
     text-align:center;
   }
+  .col-centre{
+    width: 100%;
+  }
 }
-@media only screen and (max-width: 961px) and (min-width: 642px) {
+@media only screen and (max-width: 991px) and (min-width: 642px) {
   .banner {
     padding:5%;
   }
   .banner-item{
     height:auto!important;
+  }
+  .banner-center{
+    height:100%!important;
   }
   .banner-content{
     width:auto!important;
@@ -190,8 +203,12 @@
 
   }
   .quote-content{
+    margin-top:20px;
     font-size:20px;
     text-align:center;
+  }
+  .col-centre{
+    width: 100%;
   }
 }
 

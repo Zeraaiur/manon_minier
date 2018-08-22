@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ManonMinier</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>ManonMinier</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  </head>
+</head>
 
-  <body>
+<body>
+
+  <%= render "website/navbar" %>
+
+
+  <%= yield %>
+
+  <div class="footer-contact hidden-md hidden-lg hidden-xl">
+
+    <%= render :partial => 'website/footer_contact' %>
+
+  </div>
+  <%= render "website/footer" %>
 
 
 
-    <%= yield %>
-<script>
-$(document).ready(function(){
+  <script>
+    $(document).ready(function(){
   // Add smooth scrolling to all links
   $("#btnSection2").on('click', function(event) {
 
@@ -43,5 +54,5 @@ $(document).ready(function(){
   });
 });
 </script>
-  </body>
+</body>
 </html>
