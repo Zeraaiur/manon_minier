@@ -31,3 +31,12 @@
 
 en:
   hello: "Hello world"
+
+
+  message_mailer:
+    contact:
+      subject: "Message envoyé à partir du site Web"
+
+  errors:
+    messages:
+      blank: "ne peut être vide!"

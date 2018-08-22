@@ -1,7 +1,7 @@
 .banner {
   color: white;
   text-align: center;
-  height: 100vh;
+  height: auto;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   background-position:right;
@@ -19,7 +19,7 @@
   font-size: 30px;
   font-weight: lighter;
   color: white;
-    a{
+  a{
     color:white;
     text-decoration: none;
   }
@@ -38,11 +38,11 @@
   align-items:center;
   justify-content:center;
   .small-photo{
-    height:200px;
-    width:200px;
+    height:300px;
+    width:300px;
     background-image:url("http://res.cloudinary.com/dasowf2xq/image/upload/v1534264059/Manon%20Minier/Manon_Minier.jpg");
     background-size: cover !important;
-    display:none;
+    display:inline-block;
   }
   h1 {
     font-size:60px;
@@ -51,7 +51,7 @@
     // transition:font-size 0.3s;
   }
   h3 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: lighter;
     color: white;
     font-family: Verdana, Geneva, sans-serif;
@@ -121,14 +121,14 @@
 }
 
 .low-opacity{
-  opacity:0.6;
+  opacity:0.8;
   -webkit-transition: opacity 1s; /* Safari */
   transition: opacity 1s;
 }
 
 .accent{
-  color:$red;
-  font-weight:bolder;
+  color:$red!important;
+  // font-weight:bolder;
 }
 
 
@@ -142,100 +142,56 @@
 // @media (min-width:1281px) { /* hi-res laptops and desktops */ }
 
 
-@media only screen and (max-width: 1600px) {
-  .banner-center{
-    h1 {
-      font-size:50px;
-    }
-    h3 {
-      font-size: 30px;
-    }
+
+@media only screen and (max-width:641px) {
+  .banner {
+    height:100vh!important;
+    padding:5%;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
   }
-}
-@media only screen and (max-width: 1281px) {
-  .col-picture{
-    padding-left:30px;
-    padding-right:30px;
-  }
-  .banner-center{
-    h1 {
-      font-size:40px;
-    }
-    h3 {
-      font-size: 22px;
-    }
-  }
-}
-@media only screen and (max-width:961px) {
-  .col-picture{
-    padding-left:30px;
-    padding-right:30px;
+  .banner-item{
+    height:auto!important;
   }
   .banner-content{
-    display:none;
-  }
-  .col-centre{
-    display:inline-block;
-    width:100%;
-  }
-  .banner-center{
-    h1 {
-      font-size:50px;
+    width:auto!important;
+    margin-bottom:20px;
+    h1{
+      font-size:40px;
     }
-    h3 {
-      font-size: 30px;
+    h3{
+      font-size:22px;
     }
+
   }
   .quote-content{
-    font-size:12px;
+    font-size:20px;
     text-align:center;
   }
-
-  .navbar-menu{
-    text-align:center;
-    font-size: 30px;
-    li{
-      margin-left:15px;
-    }
-  }
-  .small-photo{
-    display:inline-block!important;
-  }
-
 }
-
-@media only screen and (max-width:481px) {
+@media only screen and (max-width: 961px) and (min-width: 642px) {
   .banner {
-    color: white;
-    text-align: center;
-    height: 100vh;
-  /* if you have a 70px navbar => height: calc(100vh - 70px); */
-  background-size: cover !important;
-  background-position:right;
-}
-.banner-center{
-  h1 {
-    font-size:40px;
+    padding:5%;
   }
-  h3 {
-    font-size: 20px;
+  .banner-item{
+    height:auto!important;
+  }
+  .banner-content{
+    width:auto!important;
+    margin-bottom:20px;
+    h1{
+      font-size:40px;
+    }
+    h3{
+      font-size:25px;
+    }
+
+  }
+  .quote-content{
+    font-size:20px;
+    text-align:center;
   }
 }
-.navbar-menu{
-  display:none;
-}
-.quote-content{
-  display:none;
-}
-.banner-center{
-  height:100vh;
-}
-}
-
-
-
-
-
-
-
 

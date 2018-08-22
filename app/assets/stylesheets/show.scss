@@ -26,21 +26,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#354c60', end
   column-gap:70px;
   margin-bottom:100px;
 }
-@media only screen and (max-width:1281px) {
-  .column{
-    column-count: 2;
-    column-gap:50px;
-  }
-}
 
-@media only screen and (max-width:961px) {
+@media only screen and (max-width:641px) {
   .column{
     column-count: 1;
+    margin-bottom:30px;
+    p{
+      font-size:18px;
+      text-align:left;
+    }
   }
-  .banner-show p{
-    font-size:20px;
-    text-align:left;
-
+  .banner-show{
+    padding-top:30px;
+    h1{
+      font-size:30px;
+    }
+    h2{
+      font-size:20px;
+    }
+    h3{
+      font-size:20px;
+    }
+  }
 }
 
+@media only screen and (max-width: 1025px) and (min-width: 642px) {
+  .column{
+    column-count: 2!important;
+    column-gap:40px;
+
+  }
 }
