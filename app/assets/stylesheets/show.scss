@@ -15,14 +15,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#354c60', end
   padding-left:5%;
   padding-right:5%;
   p{
-    font-size:20px;
-    text-align:justify;
+    font-size:16px;
+    text-align:left;
     line-height:30px;
     margin-bottom:20px;
   }
 }
 .column{
-  column-count: 3;
+  column-count: 1;
   column-gap:70px;
   margin-bottom:100px;
 }
@@ -32,7 +32,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#354c60', end
     column-count: 1;
     margin-bottom:30px;
     p{
-      font-size:18px;
+      font-size:14px;
       text-align:left;
     }
   }

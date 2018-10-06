@@ -46,14 +46,14 @@ padding-left:5%;
 padding-right:5%;
 h1{
   font-family:Verdana, Geneva, sans-serif;
-  font-size:2em;
+  font-size:1.5em;
   margin-top:0px;
   color:white;
   margin-bottom:20px;
 }
 h3{
   font-family:Verdana, Geneva, sans-serif;
-  font-size:1.5em;
+  font-size:1.1em;
   margin-top:0px;
   color:white;
   margin-bottom:20px;
@@ -62,7 +62,7 @@ h3{
 p{
   font-family:Verdana, Geneva, sans-serif;
   color:white;
-  font-size:1em;
+  font-size:0.9em;
   margin-bottom:30px;
 
 }
@@ -70,7 +70,7 @@ li{
   list-style:none;
   font-family:Verdana, Geneva, sans-serif;
   color:white;
-  font-size:1em;
+  font-size:0.9em;
   margin-bottom:10px;
 
 }
@@ -78,7 +78,7 @@ li{
 .container-content{
   border-top:10px solid $dblue;
   font-family:Verdana, Geneva, sans-serif;
-  font-size:1.2em;
+  font-size:1.0em;
 }
 .quote{
   font-family: Georgia, serif;
@@ -93,11 +93,11 @@ li{
 }
 
 .col-temoignage{
-  margin-bottom:20px;
+  margin-bottom:30px;
   color:white;
   font-family:georgia, serif;
   font-style:oblique;
-  min-height:250px;
+  // min-height:250px;
   p{
     margin-bottom:5px;
   }
@@ -127,4 +127,13 @@ li{
 
     }
   }
+}
+.inline-list li{
+  display:inline;
+
+
+}
+.section-note p{
+  color:$dblue;
+
 }

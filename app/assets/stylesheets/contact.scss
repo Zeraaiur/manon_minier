@@ -16,17 +16,17 @@
   margin:10px 20px;
   height:50px;
   font-size:1.4em;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(255,255,255,0.8);
   border-radius:10px;
   padding:10px;
   border:none;
   font-weight:normal!important;
   font-size:16px;
-  color:white;
+  color:$dblue!important;
 
   &:focus{
     border:1px solid $lblue;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(255,255,255,1);
   }
 }
 
@@ -35,16 +35,16 @@
   min-height:300px;
   margin:10px 20px;
   height:50px;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(255,255,255,0.8);
   border-radius:10px;
   padding:10px;
   border:none;  font-weight:normal!important;
   font-size:16px!important;
-  color:white!important;
+  color:$dblue!important;
 
   &:focus{
     border:1px solid $lblue;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(255,255,255,1);
   }
 }
 .btn-send{
@@ -64,16 +64,16 @@
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: $lblue2;
+  color: $lblue;
     opacity: 1; /* Firefox */
   }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: $lblue2;
+  color: $lblue;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-  color: $lblue2;
+  color: $lblue;
 }
 
 .content-phone{
@@ -109,4 +109,15 @@ margin-right:10px;
   margin:10px 20px;
   height:300px;
   }
+}
+.contact-title a{
+  font-size:20px;
+  color:$lblue2;
+  &:hover{
+    text-decoration:none;
+    color:$lblue;
+  }
+}
+.contact-title .accent{
+  font-size:20px;
 }
