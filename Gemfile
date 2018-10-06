@@ -72,3 +72,5 @@ gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem 'bootstrap-sass', '3.2.0.2'
 gem 'sitemap_generator'
+gem 'mailgun-ruby', '~>1.1.6'
+gem "figaro"
