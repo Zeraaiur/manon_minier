@@ -102,7 +102,7 @@ config.action_mailer.raise_delivery_errors = false
 config.action_mailer.default :charset => "utf-8"
 
 config.action_mailer.smtp_settings = {
-address: "mail.privateemail.com",
+address: "smtp.privateemail.com",
 port: 587,
 domain: ENV["GMAIL_DOMAIN"],
 authentication: "plain",
